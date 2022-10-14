@@ -589,21 +589,16 @@ function getJdCash() {
 }
 async function getShareCode() {
   console.log(`======账号${$.index}开始======`)
-  try {
-    await getJDFruit()
-    await getJdPet()
-    await getPlantBean()
-    await getJdFactory()
-    await getJxFactory()
-    await getJdZZ()
-    await getJoy()
-    await getSgmh()
-    //await getCFD()
-    await getJdCash()
-  } catch (e) {
-    console.log(e)
-  }
-    
+  await getJDFruit()
+  await getJdPet()
+  await getPlantBean()
+  await getJdFactory()
+  await getJxFactory()
+  await getJdZZ()
+  await getJoy()
+  await getSgmh()
+  //await getCFD()
+  await getJdCash()
   console.log(`======账号${$.index}结束======\n`)
 }
 
